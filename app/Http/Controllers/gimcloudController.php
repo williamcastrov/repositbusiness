@@ -390,8 +390,9 @@ class gimcloudController extends Controller
     // Listar Items Inspeccion Alistamiento
     public function listSubGrupoEquipos($rec)
     {
-        //echo json_encode($rec->idinterno);
-        //exit;
+        dd($rec);
+        exit;
+        
         DB::beginTransaction();
         try {
             $db_name = "gimbcservice_sys";
